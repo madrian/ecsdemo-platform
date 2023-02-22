@@ -209,7 +209,7 @@ class BaseVPCStack(Stack):
         )
         
         # App Mesh Configuration
-        # appmesh()
+        # self.appmesh()
         
         # All Outputs required for other stacks to build
         CfnOutput(self, "NSArn", value=self.namespace_outputs['ARN'], export_name="NSARN")
