@@ -293,7 +293,7 @@ class BaseVPCStack(Stack):
         #     image=ecs.ContainerImage.from_registry("amazon/aws-xray-daemon"),
         #     logging=ecs.LogDriver.aws_logs(
         #         stream_prefix='/xray-container',
-        #         log_group=logGroup
+        #         log_group=self.logGroup
         #     ),
         #     essential=True,
         #     container_name="xray",
